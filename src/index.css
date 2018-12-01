@@ -1,0 +1,82 @@
+html{
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: 100%;
+  background-position: bottom;
+  background-color: #f8bbd0;
+  min-height: 100%;
+}
+
+/* forms */
+
+form{
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button, form h5{
+  margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+  color: #ec407a !important;
+}
+
+/* IdeaDetails */
+
+.content{
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+h1 {
+  font-size: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bdbdbd;
+}
+h2 {
+  font-size: 1.5em;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #bdbdbd;
+}
+h3 {
+  font-size: 1.17em;
+}
+
+ul:not(.browser-default) {
+  padding-left: 20px;
+}
+ul:not(.browser-default)>li {
+  list-style-type: circle;
+}
+
+.category {
+  width: 200px;
+  padding: 10px 0 10px 24px;
+  margin-bottom: -0.5em;
+  font-size: 12pt;
+}
+
+/* navbar */
+ul.navbar:not(.browser-default) {
+  padding-left: 0;
+}
+ul.navbar:not(.browser-default)>li {
+  list-style-type: none;
+}
