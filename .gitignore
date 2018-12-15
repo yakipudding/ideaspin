@@ -1,8 +1,10 @@
 # firebase
 .firebaserc
 .firebase/
+.vs/
 public/
 src/config/fbConfig.js
+package-lock.json
 
 # Logs
 logs
