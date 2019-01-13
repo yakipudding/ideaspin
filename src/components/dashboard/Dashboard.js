@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import IdeaList from '../ideas/IdeaList'
+import IdeaList from './IdeaList'
 import Notifications from './Notifications'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
@@ -25,7 +25,6 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
-  // console.log(state);
   return {
     ideas: state.firestore.ordered.ideas,
     auth: state.firebase.auth,

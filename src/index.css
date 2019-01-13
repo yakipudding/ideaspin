@@ -12,17 +12,14 @@ body {
   min-height: 100%;
 }
 
-/* forms */
-
+/* forms : Create,Edit */
 form{
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 0.5rem;
 }
-
 form button, form h5{
   margin: 20px 0;
 }
-
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
@@ -38,11 +35,35 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
   color: #ec407a !important;
 }
 
+textarea.materialize-textarea {
+  overflow-y: hidden;
+  padding: .8rem 0 1.6rem;
+  resize: none;
+  min-height: 10rem;
+}
+
 /* IdeaDetails */
 
 .content{
   font-size: 18px;
   white-space: pre-wrap;
+}
+
+.edit{
+  position: absolute;
+  width: 50%;
+  top: 64px;
+  bottom: 0;
+}
+.edit-preview{
+  right:0;
+  border-left: 1px dotted #f8bbd0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+  outline: none;
 }
 
 h1 {
@@ -51,12 +72,16 @@ h1 {
   border-bottom: 1px solid #bdbdbd;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding-bottom: 5px;
   border-bottom: 1px dotted #bdbdbd;
 }
 h3 {
-  font-size: 1.17em;
+  font-size: 1.5em;
+  border-bottom: 1px dotted #bdbdbd;
+}
+h4 {
+  font-size: 1.2em;
 }
 
 ul:not(.browser-default) {
@@ -71,6 +96,11 @@ ul:not(.browser-default)>li {
   padding: 10px 0 10px 24px;
   margin-bottom: -0.5em;
   font-size: 12pt;
+}
+
+/* toc */
+.idea-toc{
+  padding-top: 100px;
 }
 
 /* navbar */

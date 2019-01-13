@@ -8,6 +8,12 @@ const ideaReducer = (state = initState, action) => {
     case 'CREATE_IDEA_ERROR':
       console.log('create idea error');
       return state;
+    case 'EDIT_IDEA_SUCCESS':
+      console.log('edit idea success');
+      return state;
+    case 'EDIT_IDEA_ERROR':
+      console.log('edit idea error');
+      return state;
     case 'CREATE_ITEM_SUCCESS':
       console.log('create item success');
       return state;

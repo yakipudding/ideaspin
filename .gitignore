@@ -2,6 +2,7 @@
 .firebaserc
 .firebase/
 .vs/
+.vscode/
 public/
 src/config/fbConfig.js
 package-lock.json
